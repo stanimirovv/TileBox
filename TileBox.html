@@ -16,9 +16,12 @@
 			height:622px;
 			background:red;
 		    cursor:pointer;
+
+           
             }
 
 	    .biggest {
+            position:relative;
             float:left;
             height:311px;
             width: 600px;           
@@ -31,6 +34,7 @@
 	    }
 
 	    .second {
+            position:relative;
             float:left;
             height:311px;
             width: 341px;        
@@ -40,6 +44,7 @@
 	    }
 
 	    .secondRowBig {
+            position:relative;
             float:left;
             height:310px;
             width:470px;
@@ -49,6 +54,7 @@
 	    }
 
 	    .smallTop {
+            position:relative;
             float:left;
             height:154px;
             width:471px;
@@ -58,18 +64,42 @@
 	    }
 
 	    .smallBottom {
+            position:relative;
             float:left;
             height:155px;
             width:471px;
 
             background:yellow;           
-	    } 
+	    }
+
+        /*The title of the article starts from the bottom*/
+	    .pullBottom {           
+	        position:absolute;
+            bottom:0px;
+        }
+
+        /*The title of the article ends at the right*/
+	    .pullRight {
+	        position:absolute;
+            right:0px;
+        }
+
+        /*Streatches the background so it fits the div size*/
+         .stretchBG {
+	        -moz-background-size:100% 100%;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
 	</style>
 </head>
 <body>
 	<div class="mainBody">
-        <div onclick="location.href='#'" class="biggest"></div>
-        <div onclick="location.href='#'" class="second"></div>
+        <div onclick="location.href='#'" class="biggest">
+            <p class="pullBottom">asdadasdasd</p>
+        </div>
+        <div onclick="location.href='#'" class="second">
+             <p class="">asdadasdasd</p>
+        </div>
         <div onclick="location.href='#'" class="secondRowBig"></div>
         <div onclick="location.href='#'" class="smallTop"></div>
         <div onclick="location.href='#'" class="smallBottom"></div>
