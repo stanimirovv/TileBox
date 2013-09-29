@@ -2,43 +2,46 @@
 <html>
 <head>
 <title>Featured Articles</title>
+   
 	<style>
-
 
 	    body {
 	        font-family: Arial,sans-serif;
+			margin:0;
+			padding:0;
         }
+
+         /*start of layout*/
 		.mainBody{
 			width:942px;
 			height:622px;
-			background:red;
+			
 		    cursor:pointer;
-
+			-webkit-user-select: none; /* Chrome/Safari */        
+			-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+ */
            
        }
-
+       
 	    .biggest {
+		
             position:relative;
             float:left;
             height:311px;
             width: 600px;           
             border-right:1px solid white;
             border-bottom:1px solid white;
-            
-
-            background:url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY2tBVnjhauiS9f27xa-2aNl-ZB7hWgKUeZz2Dr529FL4iEnNC");
+            background: green;
 	    }
 
 	    .second {
-            position:relative;
-            float:left;
-            height:311px;
-            width: 341px;        
-            border-bottom:1px solid white;
-
-            background: teal;           
+	        position: relative;
+	        float: left;
+	        height: 311px;
+	        width: 341px;
+	        border-bottom: 1px solid white;
+	        background: red;
 	    }
-
 	    .secondRowBig {
             position:relative;
             float:left;
@@ -67,9 +70,10 @@
 
             background:yellow;           
 	    }
+        /*END*/
 
         /*The title of the article starts from the bottom*/
-	    .pullBottom {           
+	    .pullBottom {  
 	        position:absolute;
             bottom:0px;
         }
@@ -87,29 +91,107 @@
             background-size:100% 100%;
         }
 
+         /*used for the title of a tile*/
 	    .fontBig {
 	        font-size:35px;
             color:white;
             text-shadow: 1px 2px 3px #666;
+			margin:0;
+			padding:0;
         }
 
+        /*used for the title of a tile*/
 	    .fontMed {
 	        font-size:21px;
             color:white; 
             text-shadow: 1px 2px 3px #666;
+			margin:0;
+			padding:0;
         }
+        /*Adds a dark, slightly transparent background to the article header*/
+		.darkTransBG{
+			background-color:rgba(0,0,0,0.5);
+		}
+   
+        /* creates and sets the animation played when any tile is hovered on*/
+	    .mainBody :hover {
+           
+	      -webkit-animation-name: pulse;
+	      -moz-animation-name: pulse;
+	      -o-animation-name: pulse;
+	      animation-name: pulse;
+          -webkit-animation-fill-mode:both;
+          -moz-animation-fill-mode:both;
+          -ms-animation-fill-mode:both;
+          -o-animation-fill-mode:both;
+          animation-fill-mode:both;
+          -webkit-animation-duration:1s;
+          -moz-animation-duration:1s;
+          -ms-animation-duration:1s;
+          -o-animation-duration:1s;
+          animation-duration:1s;}
+        .animated.hinge{
+            -webkit-animation-duration:1s;
+            -moz-animation-duration:1s;
+            -ms-animation-duration:1s;
+            -o-animation-duration:1s;
+            animation-duration:1s;
 
-	   
-      
+        }
+        @-webkit-keyframes shake {
+	    0%, 100% {
+            -webkit-transform: translateX(0);
+
+	    }	
+        10%, 30%, 50%, 70%, 90% {
+            -webkit-transform: translateX(-10px);
+
+        }
+	20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(10px);
+	    }
+     }
+
+            /*ANIMATION*/
+        @-webkit-keyframes pulse {
+    0% { -webkit-transform: scale(1); }	
+	50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale(1); }	
+	50% { -moz-transform: scale(1.1); }
+    100% { -moz-transform: scale(1); }
+}
+@-o-keyframes pulse {
+    0% { -o-transform: scale(1); }	
+	50% { -o-transform: scale(1.1); }
+    100% { -o-transform: scale(1); }
+}
+@keyframes pulse {
+    0% { transform: scale(1); }	
+	50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+}
+
+        /*END*/
+
 	</style>
 </head>
 <body>
 	<div class="mainBody">
-        <div onclick="location.href='#'" class="biggest">
-            <p class="pullBottom fontBig">Important news regarding something which is not even remotely interesting</p>
+        <div onclick="location.href='#'" class="biggest stretchBG">
+            <p class="pullBottom fontBig darkTransBG ">Important news  regarding something which is not even remotely interesting</p>
         </div>
-        <div onclick="location.href='#'" class="second">
-             <p class="fontMed">Something which may be intriguing to few</p>
+        <div onclick="location.href='#'" class="second stretchBG">
+             <p class="fontMed darkTransBG">Something which may be intriguing to few</p>
         </div>
         <div onclick="location.href='#'" class="secondRowBig"></div>
         <div onclick="location.href='#'" class="smallTop"></div>
