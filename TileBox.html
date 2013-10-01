@@ -11,65 +11,81 @@
 			padding:0;
         }
 
+	    .bodyMain {
+	        height:1000px;
+            width: 1000px;
+        }
          /*start of layout*/
-		.mainBody{
-			width:942px;
-			height:622px;
-			
-		    cursor:pointer;
-			-webkit-user-select: none; /* Chrome/Safari */        
-			-moz-user-select: none; /* Firefox */
-			-ms-user-select: none; /* IE10+ */
-           
+		.first {
+        float:left;            
+    
+        width: 500px;
+        height: 500px;
+        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
+        position: relative;
        }
-       
-	    .biggest {
-		
-            position:relative;
-            float:left;
-            height:311px;
-            width: 600px;           
-            border-right:1px solid white;
-            border-bottom:1px solid white;
-            background: green;
-	    }
+       .first:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(133,0,76,.5);
+        }
 
-	    .second {
-	        position: relative;
-	        float: left;
-	        height: 311px;
-	        width: 341px;
-	        border-bottom: 1px solid white;
-	        background: red;
-	    }
-	    .secondRowBig {
-            position:relative;
-            float:left;
-            height:310px;
-            width:470px;
-            border-right:1px solid white;
-            
-            background:blue;
-	    }
+       .second {
+        float:left;            
+    
+        width: 500px;
+        height: 200px;
+        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
+        position: relative;
+       }
+       .second:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.5);
+        }
 
-	    .smallTop {
-            position:relative;
-            float:left;
-            height:154px;
-            width:471px;
-            border-bottom:1px solid white;
-
-            background:orange;          
-	    }
-
-	    .smallBottom {
-            position:relative;
-            float:left;
-            height:155px;
-            width:471px;
-
-            background:yellow;           
-	    }
+       .third {
+        float:left;            
+    
+        width: 200px;
+        height: 300px;
+        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
+        position: relative;
+       }
+       .third:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,.5);
+        }
+        .fourth {
+        float:left;            
+    
+        width: 300px;
+        height: 300px;
+        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
+        position: relative;
+       }
+       .fourth:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,97,0,.5);
+        }
         /*END*/
 
         /*The title of the article starts from the bottom*/
@@ -114,89 +130,21 @@
 		}
    
         /* creates and sets the animation played when any tile is hovered on*/
-	    .mainBody :hover {
-           
-	      -webkit-animation-name: pulse;
-	      -moz-animation-name: pulse;
-	      -o-animation-name: pulse;
-	      animation-name: pulse;
-          -webkit-animation-fill-mode:both;
-          -moz-animation-fill-mode:both;
-          -ms-animation-fill-mode:both;
-          -o-animation-fill-mode:both;
-          animation-fill-mode:both;
-          -webkit-animation-duration:1s;
-          -moz-animation-duration:1s;
-          -ms-animation-duration:1s;
-          -o-animation-duration:1s;
-          animation-duration:1s;}
-        .animated.hinge{
-            -webkit-animation-duration:1s;
-            -moz-animation-duration:1s;
-            -ms-animation-duration:1s;
-            -o-animation-duration:1s;
-            animation-duration:1s;
-
-        }
-        @-webkit-keyframes shake {
-	    0%, 100% {
-            -webkit-transform: translateX(0);
-
-	    }	
-        10%, 30%, 50%, 70%, 90% {
-            -webkit-transform: translateX(-10px);
-
-        }
-	20%, 40%, 60%, 80% {
-        -webkit-transform: translateX(10px);
-	    }
-     }
-
-            /*ANIMATION*/
-        @-webkit-keyframes pulse {
-    0% { -webkit-transform: scale(1); }	
-	50% { -webkit-transform: scale(1.1); }
-    100% { -webkit-transform: scale(1); }
-}
-@-moz-keyframes pulse {
-    0% { -moz-transform: scale(1); }	
-	50% { -moz-transform: scale(1.1); }
-    100% { -moz-transform: scale(1); }
-}
-@-o-keyframes pulse {
-    0% { -o-transform: scale(1); }	
-	50% { -o-transform: scale(1.1); }
-    100% { -o-transform: scale(1); }
-}
-@keyframes pulse {
-    0% { transform: scale(1); }	
-	50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-.pulse {
-	-webkit-animation-name: pulse;
-	-moz-animation-name: pulse;
-	-o-animation-name: pulse;
-	animation-name: pulse;
-}
-
+	
         /*END*/
 
 	</style>
 </head>
 <body>
-	<div class="mainBody">
-        <div onclick="location.href='#'" class="biggest stretchBG">
-            <p class="pullBottom fontBig darkTransBG ">Important news  regarding something which is not even remotely interesting</p>
-        </div>
-        <div onclick="location.href='#'" class="second stretchBG">
-             <p class="fontMed darkTransBG">Something which may be intriguing to few</p>
-        </div>
-        <div onclick="location.href='#'" class="secondRowBig"></div>
-        <div onclick="location.href='#'" class="smallTop"></div>
-        <div onclick="location.href='#'" class="smallBottom"></div>
+    <div class="bodyMain">
+	<div class="first" >
 	</div>
+    <div class="second stretchBG">
+        <div class="fontMed">asdasd</div>
+    </div>
+    <div class="third stretchBG">asd</div>
+    <div class="fourth">asd</div>
+    </div>
 </body>
 </html>
 <script>
