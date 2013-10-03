@@ -84,3 +84,104 @@
         /* creates and sets the animation played when any tile is hovered on*/
 	
         /*END*/
+        /*Categories*/
+        .newCategory {
+            z-index:2;
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center; 
+            line-height: 20px;
+            position:absolute;
+            width:60px;
+            height:20px;
+            background: #00aa87;
+            border-bottom: 1px solid #11dfb4;
+            border-right: 1px solid #11dfb4;
+            text-shadow: 1px 1px 1px #007c62;
+            color: #fff;
+            font-family: 'PT Sans Narrow',sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 20px 20px;            
+        }
+
+          .hotCategory {
+            z-index:2;
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center; 
+            line-height: 20px;
+            position:absolute;
+            width:60px;
+            height:20px;
+            background: #f32938;
+            border-bottom: 1px solid #f25864;
+            border-right: 1px solid #f25864;
+            text-shadow: 1px 1px 1px #c82431;
+            color: #fff;
+            font-family: 'PT Sans Narrow',sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 20px 20px;            
+        }
+
+          .interCategory {
+            z-index:2;
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center; 
+            line-height: 20px;
+            position:absolute;
+            width:60px;
+            height:20px;
+            background: #0086cf;
+            border-bottom: 1px solid #25a7ef;
+            border-right: 1px solid #25a7ef;
+            text-shadow: 1px 1px 1px #006aa5;
+            color: #fff;
+            font-family: 'PT Sans Narrow',sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 20px 20px;            
+        }
+
+           .specialCategory {
+            z-index:2;
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center; 
+            line-height: 20px;
+            position:absolute;
+            width:60px;
+            height:20px;
+            background: #d1005d;
+            border-bottom: 1px solid #eb1f7a;
+            border-right: 1px solid #eb1f7a;
+            text-shadow: 1px 1px 1px #b1004f;
+            color: #fff;
+            font-family: 'PT Sans Narrow',sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 20px 20px;            
+        }
+           
+         .updateCategory {
+            z-index:2;
+            display: table-cell; 
+            vertical-align: middle; 
+            text-align: center; 
+            line-height: 20px;
+            position:absolute;
+            width:60px;
+            height:20px;
+            background: #e44a28;
+            border-bottom: 1px solid #e16e55;
+            border-right: 1px solid #e16e55;
+            text-shadow: 1px 1px 1px #b83d22;
+            color: #fff;
+            font-family: 'PT Sans Narrow',sans-serif;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 20px 20px;            
+        }       
+          /*END*/
