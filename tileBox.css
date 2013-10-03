@@ -1,0 +1,86 @@
+     /*Start of onclick effects*/
+       .howPink:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(133,0,76,.5);
+        }
+
+       .hovGreen:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,113,0,.5);
+        }
+
+      
+       .hovRed:hover:after {
+            content: ' ';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(98,0,0,.5);
+        }
+       
+        /*END*/
+
+        /*The title of the article starts from the bottom*/
+	    .pullBottom {  
+	        position:absolute;
+            bottom:0px;
+        }
+
+        /*The title of the article ends at the right*/
+	    .pullRight {
+	        position:absolute;
+            right:0px;
+        }
+
+        /*Streatches the background so it fits the div size*/
+         .stretchBG {
+	        -moz-background-size:100% 100%;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;
+        }
+
+         /*used for the title of a tile*/
+	    .fontBig {
+	        font-size:35px;
+            color:white;
+            text-shadow: 1px 2px 3px #666;
+			margin:0;
+			padding:0;
+        }
+
+        /*used for the title of a tile*/
+	    .fontMed {
+	        font-size:21px;
+            color:white; 
+            text-shadow: 1px 2px 3px #666;
+			margin:0;
+			padding:0;
+        }
+        /*Adds a dark, slightly transparent background to the article header*/
+		.darkTransBG{
+			background-color:rgba(0,0,0,0.5);
+		}
+   
+        .wrapCenter{
+            display:block;
+            text-align:center;
+        }
+ 
+         .center {
+            display:inline-block;
+        }
+        /* creates and sets the animation played when any tile is hovered on*/
+	
+        /*END*/

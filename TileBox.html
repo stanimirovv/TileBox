@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Featured Articles</title>
-   
+   <link rel="stylesheet" href="tileBox.css" media="screen" />
 	<style>
 
 	    body {
@@ -13,137 +13,124 @@
 
 	    .bodyMain {
 	        height:1000px;
-            width: 1000px;
+            width: 943px;
         }
          /*start of layout*/
-		.first {
-        float:left;            
-    
-        width: 500px;
-        height: 500px;
-        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
-        position: relative;
-       }
-       .first:hover:after {
-            content: ' ';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(133,0,76,.5);
+		
+         
+        .biggest {
+            position:relative;
+            float:left;
+            height:311px;
+            width: 600px;           
+            border-right:1px solid white;
+            border-bottom:1px solid white;
+            background:black;
+
+      }
+
+      .second {
+            position:relative;
+            float:left;
+            height:311px;
+            width: 341px;        
+            border-bottom:1px solid white;
+            background: teal;           
+      }
+
+      .secondRowBig {
+            position:relative;
+            float:left;
+            height:310px;
+            width:470px;
+            border-right:1px solid white;           
+            background:blue;
+      }
+
+      .smallTop {
+            position:relative;
+            float:left;
+            height:154px;
+            width:471px;
+            border-bottom:1px solid white;
+            background:orange;          
+      }
+
+      .smallBottom {
+           position:relative;
+            float:left;
+            height:155px;
+            width:471px;
+
+            background:yellow;           
+      } 
+	    
+ 
+        /*Creates the navigation*/
+	    .navBar {
+            list-style:none;
+            display: table-cell;
+            vertical-align: middle;
+            position:relative;
+	        height:80px;
+            width: 940px;
+            background:white;
+            border:1px solid black;
+            margin:0;
+            padding:0;
         }
 
-       .second {
-        float:left;            
-    
-        width: 500px;
-        height: 200px;
-        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
-        position: relative;
-       }
-       .second:hover:after {
-            content: ' ';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,.5);
-        }
 
-       .third {
-        float:left;            
-    
-        width: 200px;
-        height: 300px;
-        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
-        position: relative;
+	    .navBtn {
+            cursor:pointer;
+           display: table-cell; 
+           vertical-align: middle; 
+           text-align: center; 
+           line-height: 80px;
+           float:left;
+	       height:80px;
+           width:110px;
+           border-right:solid 1px black;
+           font-weight:bold;           
        }
-       .third:hover:after {
-            content: ' ';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,.5);
-        }
-        .fourth {
-        float:left;            
-    
-        width: 300px;
-        height: 300px;
-        background: url("http://oi38.tinypic.com/33azclh.jpg") no-repeat center center;
-        position: relative;
+
+        .navBtn:hover {
+           transition: color 0.6s ease;
+           transition: background-color 0.6s ease;
+           color:white;
+           background:black;
        }
-       .fourth:hover:after {
-            content: ' ';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background-color: rgba(0,97,0,.5);
-        }
         /*END*/
-
-        /*The title of the article starts from the bottom*/
-	    .pullBottom {  
-	        position:absolute;
-            bottom:0px;
-        }
-
-        /*The title of the article ends at the right*/
-	    .pullRight {
-	        position:absolute;
-            right:0px;
-        }
-
-        /*Streatches the background so it fits the div size*/
-         .stretchBG {
-	        -moz-background-size:100% 100%;
-            -webkit-background-size:100% 100%;
-            background-size:100% 100%;
-        }
-
-         /*used for the title of a tile*/
-	    .fontBig {
-	        font-size:35px;
-            color:white;
-            text-shadow: 1px 2px 3px #666;
-			margin:0;
-			padding:0;
-        }
-
-        /*used for the title of a tile*/
-	    .fontMed {
-	        font-size:21px;
-            color:white; 
-            text-shadow: 1px 2px 3px #666;
-			margin:0;
-			padding:0;
-        }
-        /*Adds a dark, slightly transparent background to the article header*/
-		.darkTransBG{
-			background-color:rgba(0,0,0,0.5);
-		}
-   
-        /* creates and sets the animation played when any tile is hovered on*/
-	
-        /*END*/
-
 	</style>
 </head>
 <body>
-    <div class="bodyMain">
-	<div class="first" >
-	</div>
-    <div class="second stretchBG">
-        <div class="fontMed">asdasd</div>
-    </div>
-    <div class="third stretchBG">asd</div>
-    <div class="fourth">asd</div>
+    <div class="wrapCenter">
+      
+        <div class="bodyMain center">
+           <!---Navigation --->
+              <ul class="navBar center">
+                  <li class="navBtn" style="width:160px;">logo</li>
+                  <li class="navBtn">Home</li>
+                  <li class="navBtn">Something</li>
+                  <li class="navBtn">About</li>
+                  <li class="navBtn">What ever</li>
+              </ul>
+	       <!-- Start of Box Layout --->
+             <div onclick="location.href='#'" class="biggest hovRed">       
+	        </div>
+            <div onclick="location.href='#'" class="second hovGreen">
+
+            </div>
+            <div onclick="location.href='#'" class="secondRowBig hovGreen">
+
+            </div>
+            <div onclick="location.href='#'" class="smallTop hovRed">
+
+            </div>
+            <div onclick="location.href='#'" class="smallBottom hovRed">
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
