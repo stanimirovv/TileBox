@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Featured Articles</title>
+   <link rel="stylesheet" href="tileBox.css" media="screen" />
+	<style>
+
+	    body {
+	        font-family: Arial,sans-serif;
+			margin:0;
+			padding:0;
+        }
+
+	    .bodyMain {
+            cursor:pointer;
+	        height:1000px;
+            width: 943px;
+        }
+         /*start of layout*/
+		
+         
+        .biggest {
+            position:relative;
+            float:left;
+            height:311px;
+            width: 600px;           
+            border-right:1px solid white;
+            border-bottom:1px solid white;
+            background:black;
+
+      }
+
+      .second {
+            position:relative;
+            float:left;
+            height:311px;
+            width: 341px;        
+            border-bottom:1px solid white;
+            background: teal;           
+      }
+
+      .secondRowBig {
+            position:relative;
+            float:left;
+            height:310px;
+            width:470px;
+            border-right:1px solid white;           
+            background:blue;
+      }
+
+      .smallTop {
+            position:relative;
+            float:left;
+            height:154px;
+            width:471px;
+            border-bottom:1px solid white;
+            background:orange;          
+      }
+
+      .smallBottom {
+           position:relative;
+            float:left;
+            height:155px;
+            width:471px;
+
+            background:yellow;           
+      } 
+	    
+ 
+        /*Creates the navigation*/
+	    .navBar {
+            list-style:none;
+            display: table-cell;
+            vertical-align: middle;
+            position:relative;
+	        height:80px;
+            width: 940px;
+            background:white;
+            border:1px solid black;
+            margin:0;
+            padding:0;
+        }
+
+
+	    .navBtn {
+           cursor:pointer;
+           display: table-cell; 
+           vertical-align: middle; 
+           text-align: center; 
+           line-height: 80px;
+           float:left;
+	       height:80px;
+           width:110px;
+           border-right:solid 1px black;
+           font-weight:bold;           
+       }
+
+        .navBtn:hover {
+           transition: color 0.6s ease;
+           transition: background-color 0.6s ease;
+           color:white;
+           background:black;
+       }
+        /*END*/
+	</style>
+</head>
+<body>
+    <div class="wrapCenter">
+      
+        <div class="bodyMain center">
+           <!---Navigation --->
+              <ul class="navBar center">
+                  <li class="navBtn" style="width:160px;">logo</li>
+                  <li class="navBtn">Home</li>
+                  <li class="navBtn">Something</li>
+                  <li class="navBtn">About</li>
+                  <li class="navBtn">What ever</li>
+              </ul>
+	       <!-- Start of Box Layout --->
+             <div onclick="location.href='#'" class="biggest hovRed">
+                 <div class="hotCategory pullRight">E-sport</div> 
+                 <div class="fontBig  pullBottom darkTransBG">Some rather long title which talks about something viral</div>      
+	        </div>
+            <div onclick="location.href='#'" class="second hovGreen">
+                <div class="interCategory pullRight">Online</div> 
+                <div class="fontBig  pullBottom darkTransBG">Something interesting and new</div>
+            </div>
+            <div onclick="location.href='#'" class="secondRowBig hovGreen">
+                <div class="interCategory pullLeft ">Indie</div> 
+                <div class="fontBig  pullBottom">Hello world!</div>
+            </div>
+            <div onclick="location.href='#'" class="smallTop hovRed">
+                <div class="specialCategory pullRight ">Indie</div>             
+                <div class="fontBig  pullTop">Hello world!</div>
+            </div>
+            <div onclick="location.href='#'" class="smallBottom hovGreen">
+                <div class="specialCategory pullRight ">Indie</div>
+                <div class="fontBig  pullTop">Hello world!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+</script>
