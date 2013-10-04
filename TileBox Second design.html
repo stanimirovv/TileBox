@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Featured Articles</title>
+   <link rel="stylesheet" href="tileBox.css" media="screen" />
+	<style>
+
+	    body {
+	        font-family: Arial,sans-serif;
+			margin:0;
+			padding:0;
+        }
+
+	    .bodyMain {
+            cursor:pointer;
+	        height:1000px;
+            width: 600px;
+        }
+         /*start of layout*/
+		
+         
+        .biggest {
+            position:relative;
+            float:left;
+            height:270px;
+            width: 600px;           
+            border-top:4px solid #0086cf;         
+            background:black;
+
+      }
+
+      .second {
+            position:relative;
+            float:left;
+            height:280px;
+            width: 300px;  
+            border-top:1px solid white;      
+            border-right:1px solid white;
+            background: teal;           
+      }
+
+      .secondRowBig {
+            position:relative;
+            float:left;
+            height:280px;
+            width:299px;
+            border-top:1px solid white;          
+            background:blue;
+      }
+
+        /*Creates the navigation*/
+	    .navBar {
+            list-style:none;
+            display: table-cell;
+            vertical-align: middle;
+            position:relative;
+	        height:40px;
+            width: 940px;
+            background:white;
+            border:1px solid black;
+            margin:0;
+            padding:0;
+        }
+
+	    .navBtn {
+           cursor:pointer;
+           display: table-cell; 
+           vertical-align: middle; 
+           text-align: center; 
+           line-height: 40px;
+           float:left;
+	       height:40px;
+           width:80px;
+           border-right:solid 1px black;
+           font-weight:bold;           
+       }
+
+        .navBtn:hover {
+           transition: color 0.6s ease;
+           transition: background-color 0.6s ease;
+           color:white;
+           background:black;
+       }
+        /*END*/
+	</style>
+</head>
+<body>
+    <div class="wrapCenter">
+      
+        <div class="bodyMain center">
+           <!---Navigation --->
+              <ul class="navBar center">
+                  <li class="navBtn" style="width:160px;">logo</li>
+                  <li class="navBtn">Home</li>
+                  <li class="navBtn">Something</li>
+                  <li class="navBtn">About</li>
+                  <li class="navBtn">What ever</li>
+              </ul>
+	       <!-- Start of Box Layout --->
+            <div  class="biggest hovGreen">
+                <div class="interCategory pullRight ">NEW</div> 
+                <div class="fontBig  pullBottom">Hello world!</div>
+            </div>
+            <div class="second hovGreen">
+                <div class="interCategory pullRight ">last week</div> 
+                <div class="fontBig  pullBottom">Hello world!</div>
+            </div>
+            <div class="secondRowBig hovGreen">
+                <div class="interCategory pullRight ">asd</div> 
+                <div class="fontBig  pullBottom">Hello world!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+</script>
