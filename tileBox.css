@@ -38,12 +38,20 @@
             bottom:0px;
         }
 
+        .pullTop {  
+	        position:absolute;
+            top:0px;
+        }
         /*The title of the article ends at the right*/
 	    .pullRight {
 	        position:absolute;
             right:0px;
         }
 
+         .pullLeft {
+	        position:absolute;
+            left:0px;
+        }
         /*Streatches the background so it fits the div size*/
          .stretchBG {
 	        -moz-background-size:100% 100%;
@@ -53,19 +61,21 @@
 
          /*used for the title of a tile*/
 	    .fontBig {
+            z-index:2;
+            margin: 20px 20px;  
 	        font-size:35px;
             color:white;
-            text-shadow: 1px 2px 3px #666;
-			margin:0;
+            text-shadow: 1px 2px 3px #666;		
 			padding:0;
         }
 
         /*used for the title of a tile*/
 	    .fontMed {
+            z-index:2;
+            margin: 20px 20px;  
 	        font-size:21px;
             color:white; 
-            text-shadow: 1px 2px 3px #666;
-			margin:0;
+            text-shadow: 1px 2px 3px #666;			
 			padding:0;
         }
         /*Adds a dark, slightly transparent background to the article header*/
