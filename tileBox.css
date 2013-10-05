@@ -1,5 +1,5 @@
      /*Start of onclick effects*/
-       .howPink:hover:after {
+       .hovPink:hover:after {
             content: ' ';
             position: absolute;
             left: 0;
