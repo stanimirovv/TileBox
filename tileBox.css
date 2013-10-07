@@ -246,3 +246,16 @@
             margin: 20px 20px;            
         }       
           /*END*/
+
+          /*modify form of categories*/
+        .categoryCircle {
+  	        border-radius: 50%;
+            height:60px;
+            line-height: 60px;
+        }
+
+         .categoryElipse {
+  	        border-radius: 50%;
+           
+        }
+        /*END*/
