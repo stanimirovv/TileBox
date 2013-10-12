@@ -12,7 +12,7 @@
             box-shadow: inset 0 0 50px #000;
         }
      /*goes well with hot category*/
-     .hovBright:hover:after {
+     .hovHot:hover:after {
             content: ' ';
             position: absolute; 
             left: 0;
@@ -23,7 +23,7 @@
         }
      
      /*goes well with inter category*/
-     .hovPink:hover:after {
+     .hovInter:hover:after {
             content: ' ';
             position: absolute; 
             left: 0;
@@ -34,7 +34,7 @@
         }
 
      /*Goes well with special category*/
-       .hovGreen:hover:after {
+       .hovSpec:hover:after {
             content: ' ';
             position: absolute;
             left: 0;
@@ -45,7 +45,7 @@
         }
 
       /*Goes well with update category.*/
-       .hovRed:hover:after {
+       .hovUpdate:hover:after {
             content: ' ';
             position: absolute;
             left: 0;
