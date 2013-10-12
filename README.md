@@ -25,5 +25,20 @@ that may be helpful to someone in some point in time.
 <br/><br/>
 <h2>How to use (specificatons)</h2>
 <p>
-File comming soon.
-</p>
+In the .css file you can find all the details you need to know about the classes, ect.<br/>
+Here we are going to focus on the big picture.<br/></p>
+
+<ul>
+<li>You have your website flow. In it there is a div where the gridlayout will be.</li>
+<li>You create the layout - size and position. There are plenty of example layouts I've made from which you can copy/get inspiration.</li>
+<li>Style the grid layout using the css classes, or by modifying some of them and you are done.</li>
+</ul>
+
+<p> This is more or less the big picture, although there are some things that we should have a look at;
+It is what a tile usually consists of. We will have a look if the tile conssists of:</p>
+<ul>
+<li>Background image</li>
+<li>Onhover effect</li>
+<li>A title</li>
+<li>A category</li>
+</ul>
