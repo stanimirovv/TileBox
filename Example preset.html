@@ -13,8 +13,8 @@
 
 	    .bodyMain {
             cursor:pointer;
-	        height:240px;
-            width: 360px;
+	        height:360px;
+            width: 240px;
         }
          /*start of layout*/
 		
@@ -23,25 +23,19 @@
 	</style>
 </head>
 <body>
-    <!--- This example layout can be used on the bottom of a page to show other relevant articles to this one from different sections.
-           Since it is this small it uses only background and category.--->
+    <!--- This example layout can be used as a sidebar to show interesting / relevant articles--->
     <div class="wrapCenter">     
         <div class="bodyMain center">
            <div onclick="location.href='#'" class="presetRect hovUpdate">
-                 <div class="updateCategory pullRight categoryCircle">New</div>                    
+                 <div class="interCategory pullRight categoryCircle">New</div>                    
 	        </div>
-             <div onclick="location.href='#'" class="presetSquare hovUpdate">
-                 <div class="updateCategory pullRight ">Hot</div>       
+            <div onclick="location.href='#'" class="presetRect hovUpdate">
+                 <div class="specialCategory pullRight categoryCircle">New</div>                    
 	        </div>
-            <div onclick="location.href='#'" class="presetSquare hovUpdate">
-                 <div class="updateCategory pullRight ">prev. week</div>     
+            <div onclick="location.href='#'" class="presetRect hovUpdate">
+                 <div class="hotCategory pullRight categoryCircle">New</div>                    
 	        </div>
-            <div onclick="location.href='#'" class="presetSquare hovUpdate">
-                 <div class="updateCategory pullRight ">Top</div>    
-	        </div>
-            <div onclick="location.href='#'" class="presetSquare hovUpdate">
-                 <div class="updateCategory pullRight ">...</div>   
-	        </div>
+             
         </div>
     </div>
 </body>

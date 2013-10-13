@@ -291,7 +291,7 @@
             float:left;
             height:120px;
             width: 240px;           
-            background: red;
+            background: gray;
             /*Lines below will stretch the background if it is a picture*/
             background-size: 100% auto;
 	        -moz-background-size:100% 100%;

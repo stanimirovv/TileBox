@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Featured Articles</title>
+   <link rel="stylesheet" href="tileBox.css" media="screen" />
+	<style>
+
+	    body {
+	        font-family: Arial,sans-serif;
+			margin:0;
+			padding:0;
+        }
+
+	    .bodyMain {
+            cursor:pointer;
+	        height:240px;
+            width: 360px;
+        }
+         /*start of layout*/
+		
+         
+      
+	</style>
+</head>
+<body>
+    <!--- This example layout can be used on the bottom of a page to show other relevant articles to this one from different sections.
+           Since it is this small it uses only background and category.--->
+    <div class="wrapCenter">     
+        <div class="bodyMain center">
+           <div onclick="location.href='#'" class="presetRect hovUpdate">
+                 <div class="updateCategory pullRight categoryCircle">New</div>                    
+	        </div>
+             <div onclick="location.href='#'" class="presetSquare hovUpdate">
+                 <div class="updateCategory pullRight ">Hot</div>       
+	        </div>
+            <div onclick="location.href='#'" class="presetSquare hovUpdate">
+                 <div class="updateCategory pullRight ">prev. week</div>     
+	        </div>
+            <div onclick="location.href='#'" class="presetSquare hovUpdate">
+                 <div class="updateCategory pullRight ">Top</div>    
+	        </div>
+            <div onclick="location.href='#'" class="presetSquare hovUpdate">
+                 <div class="updateCategory pullRight ">...</div>   
+	        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+</script>
