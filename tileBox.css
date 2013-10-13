@@ -1,4 +1,7 @@
-     /*Start of onhover effects used on tiles to create an effect.
+      /*TileBox -> https://github.com/IamBc/TileBox */     
+
+
+      /*Start of onhover effects used on tiles to create an effect.
         There is a suggested category for each effect.   
      */
 
@@ -280,4 +283,36 @@
          .categoryElipse {
   	        border-radius: 50%;
         }
+        /*END*/
+
+        /*Start of preset tiles*/
+        .presetRect {
+            position:relative;
+            float:left;
+            height:120px;
+            width: 240px;           
+            border-right:1px solid white;
+            border-bottom:1px solid white;
+            background: red;
+            /*Lines below will stretch the background if it is a picture*/
+            background-size: 100% auto;
+	        -moz-background-size:100% 100%;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%; 
+        }
+
+        .presetSquare {        
+            position:relative;
+            float:left;
+            height:120px;
+            width: 120px;        
+            border-bottom:1px solid white;
+            background: blue;
+            /*Lines below will stretch the background if it is a picture*/
+            background-size: 100% auto;
+	        -moz-background-size:100% 100%;
+            -webkit-background-size:100% 100%;
+            background-size:100% 100%;         
+        }
+
         /*END*/
