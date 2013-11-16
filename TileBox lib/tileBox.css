@@ -83,31 +83,31 @@
 
         /*The title of the article starts from the bottom*/
 	    .pullBottom {  
-	        position:absolute;
-            bottom:0px;
+	         position:absolute;
+                 bottom:0px;
         }
 
         /*The title of the article starts from the top*/
         .pullTop {  
 	        position:absolute;
-            top:0px;
+                top:0px;
         }
 
         /*The title of the article ends at the right*/
 	    .pullRight {
 	        position:absolute;
-            right:0px;
+                right:0px;
         }
 
         /*The title of the article ends at the left*/
          .pullLeft {
 	        position:absolute;
-            left:0px;
+                left:0px;
         }
         /*Streatches the background so it fits the div size*/
          .stretchBG {
             background-size: 100% auto;
-	        -moz-background-size:100% 100%;
+	    -moz-background-size:100% 100%;
             -webkit-background-size:100% 100%;
             background-size:100% 100%;
         }
@@ -116,22 +116,22 @@
          /*SIZE FOR THE TITLES*/
          /*used for the title of a tile*/
 	    .fontBig {
-            z-index:2;
-            margin: 20px 20px;  
+                z-index:2;
+                margin: 20px 20px;  
 	        font-size:35px;
-            color:white;
-            text-shadow: 1px 2px 3px #666;		
-			padding:0;
+                color:white;
+                text-shadow: 1px 2px 3px #666;		
+        	padding:0;
         }
 
         /*used for the title of a tile*/
 	    .fontMed {
-            z-index:2;
-            margin: 20px 20px;  
+                z-index:2;
+                margin: 20px 20px;  
 	        font-size:21px;
-            color:white; 
-            text-shadow: 1px 2px 3px #666;			
-			padding:0;
+                color:white; 
+                text-shadow: 1px 2px 3px #666;			
+		padding:0;
         }
 
         /*END*/
@@ -229,23 +229,23 @@
         }
 
            .specialCategory {
-            z-index:2;
-            display: table-cell; 
-            vertical-align: middle; 
-            text-align: center; 
-            line-height: 20px;
-            position:absolute;
-            width:60px;
-            height:20px;
-            background: #d1005d;
-            border-bottom: 1px solid #eb1f7a;
-            border-right: 1px solid #eb1f7a;
-            text-shadow: 1px 1px 1px #b1004f;
-            color: #fff;
-            font-family: 'PT Sans Narrow',sans-serif;
-            font-size: 9px;
-            text-transform: uppercase;
-            margin: 20px 20px;            
+             z-index:2;
+             display: table-cell; 
+             vertical-align: middle; 
+             text-align: center; 
+             line-height: 20px;
+             position:absolute;
+             width:60px;
+             height:20px;
+             background: #d1005d;
+             border-bottom: 1px solid #eb1f7a;
+             border-right: 1px solid #eb1f7a;
+             text-shadow: 1px 1px 1px #b1004f;
+             color: #fff;
+             font-family: 'PT Sans Narrow',sans-serif;
+             font-size: 9px;
+             text-transform: uppercase;
+             margin: 20px 20px;            
         }
            
          .updateCategory {
@@ -294,7 +294,7 @@
             background: gray;
             /*Lines below will stretch the background if it is a picture*/
             background-size: 100% auto;
-	        -moz-background-size:100% 100%;
+	    -moz-background-size:100% 100%;
             -webkit-background-size:100% 100%;
             background-size:100% 100%; 
         }
@@ -307,7 +307,7 @@
             background: blue;
             /*Lines below will stretch the background if it is a picture*/
             background-size: 100% auto;
-	        -moz-background-size:100% 100%;
+	    -moz-background-size:100% 100%;
             -webkit-background-size:100% 100%;
             background-size:100% 100%;         
         }
