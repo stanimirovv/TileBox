@@ -6,6 +6,7 @@ TileBox
 <li>About</li>
 <li>Features</li>
 <li>How to use (specifications)</li>
+
 </ul>
 <br/><br/>
 <h2>About</h2>
@@ -37,10 +38,10 @@ Here we are going to focus on the big picture.<br/></p>
 <p> This is more or less the big picture, although there are some things that we should have a look at;
 It is what a tile usually consists of. We will have a look if the tile conssists of:</p>
 <ul>
-<li>Background image</li>
-<li>Onhover effect</li>
-<li>A title</li>
-<li>A category</li>
+<li>Background image <br/> Basically what will be seen by the user</li>
+<li>Onhover effect <br/> an effect which will usually be a single color, just to help you know what you are selecting</li>
+<li>A title <br/> Basically what the user will read</li>
+<li>A category <br/> A small part of the screen and can only hold a few words, so the category names must be really short.</li>
 </ul>
 
 <p>All the details on positioning, size and color manipulation can be found in the .css file.</p>
