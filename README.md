@@ -45,3 +45,4 @@ It is what a tile usually consists of. We will have a look if the tile conssists
 </ul>
 
 <p>All the details on positioning, size and color manipulation can be found in the .css file.</p>
+.
